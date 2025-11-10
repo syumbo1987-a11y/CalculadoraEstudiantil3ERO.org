@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculadora Estudiantil Online</title>
+   <style>
+      body {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin: 0;
+         background: linear-gradient(135deg, #bbdefb, #d1c4e9);
+         color: #333;
+      }
+
+      header {
+         background-color: #1e88e5;
+         color: white;
+         text-align: center;
+         padding: 30px 20px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+         margin: 0;
+         font-size: 2.5em;
+      }
+
+      header p {
+         font-size: 1.1em;
+         margin-top: 10px;
+      }
+
+      main {
+         max-width: 900px;
+         margin: 40px auto;
+         background-color: #fff;
+         padding: 40px;
+         border-radius: 15px;
+         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      section {
+         margin-bottom: 40px;
+      }
+
+      h2 {
+         color: #1e88e5;
+         border-left: 6px solid #1e88e5;
+         padding-left: 10px;
+         margin-bottom: 15px;
+      }
+
+      p {
+         line-height: 1.7;
+         text-align: justify;
+         margin-bottom: 15px;
+      }
+
+      #calculator {
+         border-radius: 15px;
+         padding: 25px;
+         background: #f8f9fa;
+         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+         text-align: center;
+      }
+
+      #display {
+         width: 100%;
+         height: 60px;
+         font-size: 28px;
+         text-align: right;
+         margin-bottom: 15px;
+         border: none;
+         border-radius: 10px;
+         background-color: #e3f2fd;
+         box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+         padding-right: 10px;
+      }
+
+      button {
+         width: 65px;
+         height: 65px;
+         font-size: 22px;
+         margin: 6px;
+         cursor: pointer;
+         border: none;
+         border-radius: 12px;
+         background: linear-gradient(145deg, #90caf9, #42a5f5);
+         color: white;
+         transition: all 0.2s ease;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+         transform: scale(1.05);
+         background: linear-gradient(145deg, #64b5f6, #1e88e5);
+      }
+
+      button:active {
+         transform: scale(0.95);
+      }
+
+      .operator {
+         background: linear-gradient(145deg, #ba68c8, #8e24aa);
+      }
+
+      .equal {
+         background: linear-gradient(145deg, #66bb6a, #43a047);
+      }
+
+      footer {
+         background-color: #1e88e5;
+         color: white;
+         text-align: center;
+         padding: 15px;
+         font-size: 0.9em;
+         margin-top: 50px;
+      }
+
+      @media (max-width: 600px) {
+         button {
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+         }
+
+         #display {
+            font-size: 22px;
+         }
+      }
+   </style>
+</head>
+<body>
+
+   <header>
+      <h1>Calculadora Estudiantil Online</h1>
+      <p>Una herramienta creada por estudiantes, para facilitar el aprendizaje de las matemáticas básicas.</p>
+   </header>
+
+   <main>
+      <section id="introduccion">
+         <h2>¿Qué es la Calculadora Estudiantil Online?</h2>
+         <p>
+            La <strong>Calculadora Estudiantil Online</strong> es una herramienta digital diseñada con el propósito de apoyar el aprendizaje matemático de los estudiantes de distintos niveles educativos. 
+            Ofrece una interfaz amigable y moderna que permite realizar operaciones básicas de manera rápida, precisa y visualmente atractiva.
+         </p>
+         <p>
+            Este proyecto fue desarrollado como parte de una iniciativa académica que promueve el uso de la tecnología para el fortalecimiento de las competencias lógico-matemáticas. 
+            Su diseño busca combinar simplicidad, estética y funcionalidad en una misma aplicación web.
+         </p>
+      </section>
+
+      <section id="creacion">
+         <h2>¿Cómo fue creada?</h2>
+         <p>
+            La calculadora fue desarrollada utilizando las tecnologías fundamentales del desarrollo web: 
+            <strong>HTML5</strong> para la estructura del sitio, <strong>CSS3</strong> para los estilos y diseño visual, 
+            y <strong>JavaScript</strong> para la lógica de funcionamiento que permite procesar las operaciones matemáticas.
+         </p>
+         <p>
+            Se emplearon técnicas modernas de diseño como el uso de degradados, sombras, transiciones suaves y componentes responsivos, 
+            para asegurar una experiencia fluida tanto en computadoras como en dispositivos móviles. 
+            Además, se aplicó una estructura semántica en el código para mejorar su organización y accesibilidad.
+         </p>
+      </section>
+
+      <section id="objetivo">
+         <h2>Objetivo del Proyecto</h2>
+         <p>
+            El objetivo principal de la <strong>Calculadora Estudiantil Online</strong> es brindar a los estudiantes una herramienta práctica y educativa que 
+            facilite la realización de operaciones matemáticas básicas, fomentando la autonomía y el aprendizaje interactivo.
+         </p>
+         <p>
+            También busca despertar el interés de los jóvenes por la programación y el desarrollo web, demostrando cómo los conocimientos tecnológicos 
+            pueden aplicarse a la resolución de problemas cotidianos del ámbito académico.
+         </p>
+      </section>
+
+      <section id="publico">
+         <h2>Público al que está dirigida</h2>
+         <p>
+            Esta calculadora está dirigida principalmente a estudiantes de educación básica, bachillerato y primeros niveles universitarios que 
+            requieren una herramienta sencilla para reforzar sus conocimientos aritméticos. 
+            También puede ser utilizada por docentes, tutores o cualquier persona que desee realizar cálculos rápidos desde un navegador web.
+         </p>
+         <p>
+            Gracias a su diseño accesible y su lenguaje simple, la calculadora puede ser comprendida y utilizada por usuarios de todas las edades, 
+            convirtiéndose en un recurso educativo digital ideal para entornos de aprendizaje modernos.
+         </p>
+      </section>
+
+      <section id="calculadora">
+         <h2>Calculadora Interactiva</h2>
+         <div id="calculator">
+            <input type="text" id="display" disabled>
+            <div>
+               <button onclick="clearDisplay()" class="operator">C</button>
+               <button onclick="appendToDisplay('7')">7</button>
+               <button onclick="appendToDisplay('8')">8</button>
+               <button onclick="appendToDisplay('9')">9</button>
+               <button onclick="appendToDisplay('/')" class="operator">÷</button>
+            </div>
+            <div>
+               <button onclick="appendToDisplay('4')">4</button>
+               <button onclick="appendToDisplay('5')">5</button>
+               <button onclick="appendToDisplay('6')">6</button>
+               <button onclick="appendToDisplay('*')" class="operator">×</button>
+            </div>
+            <div>
+               <button onclick="appendToDisplay('1')">1</button>
+               <button onclick="appendToDisplay('2')">2</button>
+               <button onclick="appendToDisplay('3')">3</button>
+               <button onclick="appendToDisplay('-')" class="operator">−</button>
+            </div>
+            <div>
+               <button onclick="appendToDisplay('0')">0</button>
+               <button onclick="appendToDisplay('+')" class="operator">+</button>
+               <button onclick="calculate()" class="equal">=</button>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <p>© 2025 Calculadora Estudiantil Online | Creada por estudiantes para estudiantes</p>
+   </footer>
+
+   <script>
+      function appendToDisplay(value) {
+         document.getElementById('display').value += value;
+      }
+
+      function clearDisplay() {
+         document.getElementById('display').value = '';
+      }
+
+      function calculate() {
+         try {
+            let result = eval(document.getElementById('display').value);
+            document.getElementById('display').value = result;
+         } catch (error) {
+            document.getElementById('display').value = 'Error';
+         }
+      }
+   </script>
+
+</body>
+</html>
